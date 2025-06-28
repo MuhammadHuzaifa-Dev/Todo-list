@@ -1,88 +1,134 @@
-/* Removing All the Default Margin & Padding and adding the font-family */
+/* Reset default margin/padding and set font */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Centering the container in the middle of the screen */
+/* Fullscreen center layout */
 body {
   background-color: rgb(44, 44, 209);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px; /* Prevent content from touching edges on small screens */
 }
 
+/* Container Styling */
 .container {
+  width: 100%;
+  max-width: 400px;
   text-align: center;
   padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Heading */
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: rgb(44, 44, 209);
+  font-size: 24px;
 }
 
+/* Input field */
 input {
-  border: none;
-  padding: 15px;
-  font-size: 17px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
   color: rgb(44, 44, 209);
   border-radius: 5px;
+  border: none;
   outline: 1px solid rgb(44, 44, 209);
+  margin-bottom: 10px;
 }
 
 input::placeholder {
   color: rgb(44, 44, 209);
 }
 
+/* Button */
 button {
-  padding: 15px;
-  font-size: 17px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   background-color: rgb(44, 44, 209);
   color: #fff;
-}
-button:hover{
-    background-color: rgb(22, 22, 192);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: rgb(22, 22, 192);
+}
+
+/* To-do list container */
 .todo-container {
-  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
+/* Remove default list style */
 ul {
   list-style-type: none;
 }
 
+/* List items */
 ul li {
-  padding: 10px;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
   background-color: rgb(49, 49, 252);
   color: #fff;
-  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  flex-wrap: wrap;
 }
 
-ul li button{
-    padding: 10px;
-  border-radius: 5px;
+/* List item button */
+ul li button {
+  padding: 8px 12px;
   background-color: #ffffff;
   color: rgb(22, 22, 192);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-ul li button:hover{
-    background-color: #ffffffd3;
-    
+ul li button:hover {
+  background-color: #f0f0f0;
 }
 
-.completed{
+/* Completed task style */
+.completed {
   background-color: #646464;
+}
+
+/* Responsive Text */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+
+  ul li button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }
