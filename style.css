@@ -1,0 +1,88 @@
+/* Removing All the Default Margin & Padding and adding the font-family */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centering the container in the middle of the screen */
+body {
+  background-color: rgb(44, 44, 209);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: rgb(44, 44, 209);
+}
+
+input {
+  border: none;
+  padding: 15px;
+  font-size: 17px;
+  color: rgb(44, 44, 209);
+  border-radius: 5px;
+  outline: 1px solid rgb(44, 44, 209);
+}
+
+input::placeholder {
+  color: rgb(44, 44, 209);
+}
+
+button {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 209);
+  color: #fff;
+}
+button:hover{
+    background-color: rgb(22, 22, 192);
+}
+
+.todo-container {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgb(49, 49, 252);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+ul li button{
+    padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: rgb(22, 22, 192);
+}
+
+ul li button:hover{
+    background-color: #ffffffd3;
+    
+}
+
+.completed{
+  background-color: #646464;
+}
