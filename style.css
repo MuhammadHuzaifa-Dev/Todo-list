@@ -121,7 +121,6 @@ ul li button:hover{
   }
 
   ul li button {
-    align-self: flex-end;
     font-size: 14px;
     padding: 8px;
   }
