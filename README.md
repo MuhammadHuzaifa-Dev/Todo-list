@@ -18,12 +18,6 @@ A simple and clean Todo List web application built using **HTML**, **CSS**, and 
 
 ---
 
-## 📸 Preview
-
-![Todo List Preview](https://user-images.githubusercontent.com/00000000/your-screenshot-link.jpg) <!-- Optional: Replace with your image URL -->
-
----
-
 ## 🧠 What I Learned
 
 While building this project, I learned:
