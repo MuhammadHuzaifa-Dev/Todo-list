@@ -1,134 +1,87 @@
-/* Reset default margin/padding and set font */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Fullscreen center layout */
+/* Centering the container in the middle of the screen */
 body {
   background-color: rgb(44, 44, 209);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Prevent content from touching edges on small screens */
 }
 
-/* Container Styling */
 .container {
-  width: 100%;
-  max-width: 400px;
   text-align: center;
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
-/* Heading */
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: rgb(44, 44, 209);
-  font-size: 24px;
 }
 
-/* Input field */
 input {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  border: none;
+  padding: 15px;
+  font-size: 17px;
   color: rgb(44, 44, 209);
   border-radius: 5px;
-  border: none;
   outline: 1px solid rgb(44, 44, 209);
-  margin-bottom: 10px;
 }
 
 input::placeholder {
   color: rgb(44, 44, 209);
 }
 
-/* Button */
 button {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 15px;
+  font-size: 17px;
   border: none;
   border-radius: 5px;
   background-color: rgb(44, 44, 209);
   color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: rgb(22, 22, 192);
 }
 
-button:hover {
-  background-color: rgb(22, 22, 192);
-}
-
-/* To-do list container */
 .todo-container {
-  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-/* Remove default list style */
 ul {
   list-style-type: none;
 }
 
-/* List items */
 ul li {
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
+  font-size: 20px;
   background-color: rgb(49, 49, 252);
   color: #fff;
-  border-radius: 5px;
-  font-size: 16px;
-  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
-/* List item button */
-ul li button {
-  padding: 8px 12px;
+ul li button{
+    padding: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
   color: rgb(22, 22, 192);
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
 }
 
-ul li button:hover {
-  background-color: #f0f0f0;
+ul li button:hover{
+    background-color: #ffffffd3;
+    
 }
 
-/* Completed task style */
-.completed {
+.completed{
   background-color: #646464;
-}
-
-/* Responsive Text */
-@media (max-width: 480px) {
-  h2 {
-    font-size: 20px;
-  }
-
-  input,
-  button {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  ul li {
-    font-size: 14px;
-  }
-
-  ul li button {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
 }
